@@ -2,7 +2,7 @@
   "name": "jr",
   "version": "0.1.0",
   "private": true,
-  "homepage": "jamisonrubino.github.io/business-site",
+  "homepage": "https://www.jamisonrubino.com",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@react-email/render": "^0.0.10",
