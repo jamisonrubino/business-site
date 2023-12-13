@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react"
 import { useLocation } from 'react-router-dom'
 import emailjs from "@emailjs/browser";
-import taskrabbitIcon from "../taskrabbit_icon.png";
+import taskrabbitIcon from "../taskrabbit.jpeg";
 import thumbtackIcon from "../thumbtack.jpeg";
 // import { render } from '@react-email/render';
 // import nodemailer from 'nodemailer';
