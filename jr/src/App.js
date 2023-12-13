@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import { NavLink, Routes, BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import Services from './Components/services.js';
 import Contact from './Components/contact.js';
-import Home from './Components/home.js';
+import { useEffect } from 'react';
 var name = "Jamison Rubino";
 
 function App() {
+  useEffect(() => {
+    document.title = 'Home and Office Improvement';
+  }, []);
   return (
     <Router>
     <div className="App">
       <header className="App-header">
-        <a
+        <NavLink 
           className="App-link text-info"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          to="/"
         >
           {name}
-        </a>
+        </NavLink>
         <h6 className="text-light">Home and Office Improvement</h6>
         <nav>
         <ul style={{paddingLeft: 0}} className="mt-0">
