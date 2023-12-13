@@ -3,13 +3,9 @@ import './App.css';
 import { NavLink, Routes, BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import Services from './Components/services.js';
 import Contact from './Components/contact.js';
-import { useEffect } from 'react';
 var name = "Jamison Rubino";
 
 function App() {
-  useEffect(() => {
-    document.title = 'Home and Office Improvement';
-  }, []);
   return (
     <Router>
     <div className="App">
