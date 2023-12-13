@@ -158,10 +158,9 @@ export default function Contact() {
                 <p className="p-0 m-1">Phone: +1 541-970-4404</p>
                 <p className="p-0 m-1">Email: jamison.rubino@gmail.com</p>
                 <p className="px-0 pt-2 m-1">
-                    <a href="https://www.taskrabbit.com/profile/jamison-r--5" target="_blank" alt="My Taskrabbit Profile" className="px-2"><img src={taskrabbitIcon} width="34" height="34" className="rounded" /></a>
-                <a href="https://www.thumbtack.com/wa/renton/movers/jamison-rubino/service/488671145822986247" target="_blank" alt="My Thumbtack Profile" className="px-2"><img src={thumbtackIcon} width="34" height="34" className="rounded ml-3" /></a>
+                    <a href="https://www.taskrabbit.com/profile/jamison-r--5" target="_blank" alt="My Taskrabbit Profile" className="px-2"><img src={taskrabbitIcon} width="34" height="34" className="rounded" alt="Taskrabbit Profile" /></a>
+                <a href="https://www.thumbtack.com/wa/renton/movers/jamison-rubino/service/488671145822986247" target="_blank" alt="My Thumbtack Profile" className="px-2"><img src={thumbtackIcon} width="34" height="34" className="rounded ml-3" alt="Thumbtack Profile" /></a>
                 </p>
-                <p className="p-0 m-1"></p>
 
             </div>
             <SelectedService service={service} />
