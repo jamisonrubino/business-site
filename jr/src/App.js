@@ -19,10 +19,6 @@ function App() {
         <h6 className="text-light">Home and Office Improvement</h6>
         <nav>
         <ul style={{paddingLeft: 0}} className="mt-0">
-          {/* <li className="px-2">
-            <NavLink to="/Home" className={({ isActive, isPending }) =>
-            isPending ? "" : isActive ? "text-info" : ""}>Home</NavLink> 
-          </li> */}
           <li className="px-2">
             <NavLink to="/" 
             className={({ isActive, isPending }) =>
@@ -36,7 +32,6 @@ function App() {
         </nav>
       </header>
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/" element={<Services />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>

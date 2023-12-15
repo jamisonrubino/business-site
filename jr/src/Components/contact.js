@@ -3,10 +3,6 @@ import { useLocation } from 'react-router-dom'
 import emailjs from "@emailjs/browser";
 import taskrabbitIcon from "../taskrabbit.jpeg";
 import thumbtackIcon from "../thumbtack.jpeg";
-// import { render } from '@react-email/render';
-// import nodemailer from 'nodemailer';
-// import { Email } from '../email';
-// import sendgrid from '@sendgrid/mail';
 
 function AlertMessage(props) {
     if (props.submitted === true && props.error === false) {
