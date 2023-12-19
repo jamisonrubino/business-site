@@ -69,7 +69,6 @@ export default function Contact() {
                 console.log('error');
                 throw new Error("Please fill out all fields before submitting.");
             }
-            //template_wzqz139
             //from_email, from_name, message
             const serviceId = "service_s2w7qvx";
             const templateId = "template_wzqz139";
@@ -79,32 +78,12 @@ export default function Contact() {
             from_name: `${contact.firstName} ${contact.lastName}`,
                 from_email: contact.email, message: `${contact.message}&nbsp;&nbsp;&nbsp;Phone: ${contact.phone}`
             });
-            // alert("email successfully sent; check inbox");
             } catch (error) {
                 console.log(error);
             } finally {
                 setLoading(false);
             }
             
-            // const sgMail = require('@sendgrid/mail')
-            // sendgrid.setApiKey(process.env.REACT_APP_SENDGRID_API || "");
-
-            // const html = render(<Email message={contact.message} />);
-            // const msg = {
-            // to: 'jamison.rubino@gmail.com',
-            // from: `"${contact.firstName} ${contact.lastName}" <${contact.email}>`,
-            // subject: 'Contact form submission!',
-            // text: contact.message,
-            // html: html,
-            // }
-            // sendgrid.send(msg)
-            // .then(() => {
-            //     console.log('Email sent');
-            // })
-            // .catch((error) => {
-            //     console.error(error);
-            //     throw(error);
-            // })
             successful = true;
             error = false;
             setContact({ firstName: "", lastName: "", phone: "", email: "", message: "", submitted: successful, error: error, resetService: true });
@@ -115,32 +94,6 @@ export default function Contact() {
             error = true;
             setContact({...contact, submitted: successful, error: error});
         }
-
-          
-        // send email to admin
-        // const transporter = nodemailer.createTransport({
-        //     host: 'smtp.gmail.com',
-        //     port: 465,
-        //     secure: true,
-        //     auth: {
-        //       user: 'jamison.rubino@gmail.com',
-        //       pass: '6uwruY+c=AF2Phaje!rat#uph+p2?2',
-        //     },
-        //   });
-          
-        // const emailHtml = render(<Email message={contact.message} />);
-        
-        // const options = {
-        // from: ,
-        // to: 'jamison.rubino@gmail.com',
-        // subject: 'Contact form submission',
-        // html: emailHtml,
-        // };
-        
-        // await transporter.sendMail(options);
-      
-        
-        // clear form
 
         console.log(contact);
 
@@ -159,11 +112,9 @@ export default function Contact() {
                 </p>
 
             </div>
+            
             <SelectedService service={service} />
-            {/* <div className="contact-form">
-                <h2>Contact Form</h2>
-                <ContactForm contact={contact} setContact={setContact} />
-            </div> */}
+
             <form onSubmit={e=>handleSubmit(e)} >
             <div className="row mx-0  justify-content-center pb-2 pt-4">
                 <div className="col-sm-6 col-lg-3">

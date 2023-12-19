@@ -1,9 +1,9 @@
 {
   "short_name": "Jamison Rubino",
-  "name": "Jamison Rubino - Home and Office Improvement",
+  "name": "Jamison Rubino - Home and Business Improvement",
   "icons": [
     {
-      "src": "../icon.png",
+      "src": "../src/icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
