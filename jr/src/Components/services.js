@@ -83,7 +83,7 @@ export default function Services() {
                                 <Link to="../Contact" className="btn btn-secondary"  state={{service: "Web Development"}}>Get a Quote</Link>
                                 </li>
                                 <li className="list-group-item bg-dark text-light pb-3">        
-                                <Link to="https://jamison-rubino.bookafy.com/service/web-development-meeting?locale=en" className="btn btn-success" target="_blank">Book Now</Link>
+                                <Link to="https://jamison-rubino.bookafy.com/service/web-development-meeting?locale=en" className="btn btn-light" target="_blank">Book Now</Link>
                                 </li>
                         </ul>
                     </div>
@@ -101,7 +101,7 @@ export default function Services() {
                                 <Link to="../Contact" className="btn btn-secondary"  state={{service: "Search Engine Optimization"}}>Get a Quote</Link>
                                 </li>
                                 <li className="list-group-item bg-dark text-light pb-3">        
-                                <Link to="https://jamison-rubino.bookafy.com/service/seo-meeting?locale=en" className="btn btn-success" target="_blank">Book Now</Link>
+                                <Link to="https://jamison-rubino.bookafy.com/service/seo-meeting?locale=en" className="btn btn-light" target="_blank">Book Now</Link>
                                 </li>
                         </ul>
                     </div>

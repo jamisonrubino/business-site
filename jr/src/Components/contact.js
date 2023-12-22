@@ -153,7 +153,7 @@ export default function Contact() {
                         <textarea value={contact.message} onChange={e => {setContact({ ...contact, message: e.target.value, resetService: contact.message.length < 3 ? true : contact.resetService })}} className="form-control" id="message" />
                     </div>
                     <div className="row mx-0">
-                        <button type="submit" className="btn btn-primary btn-block mb-4">Submit</button>
+                        <button type="submit" className="btn btn-dark btn-block mb-4">Submit</button>
                         </div>
                     </div>
                 </div>
