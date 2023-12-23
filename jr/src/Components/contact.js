@@ -3,6 +3,9 @@ import { useLocation } from 'react-router-dom'
 import emailjs from "@emailjs/browser";
 import taskrabbitIcon from "../taskrabbit.jpeg";
 import thumbtackIcon from "../thumbtack.jpeg";
+import fiverrIcon from "../fiverr.jpg";
+import upworkIcon from "../upwork.jpg";
+
 
 function AlertMessage(props) {
     if (props.submitted === true && props.error === false) {
@@ -109,6 +112,8 @@ export default function Contact() {
                 <p className="px-0 pt-2 m-1">
                     <a href="https://www.taskrabbit.com/profile/jamison-r--5" target="_blank" alt="My Taskrabbit Profile" className="px-2"><img src={taskrabbitIcon} width="34" height="34" className="rounded" alt="Taskrabbit Profile" /></a>
                 <a href="https://www.thumbtack.com/wa/renton/movers/jamison-rubino/service/488671145822986247" target="_blank" alt="My Thumbtack Profile" className="px-2"><img src={thumbtackIcon} width="34" height="34" className="rounded ml-3" alt="Thumbtack Profile" /></a>
+                <a href="https://www.fiverr.com/jamisonrubino" target="_blank" alt="My Fiverr Profile" className="px-2"><img src={fiverrIcon} width="34" height="34" className="rounded ml-3" alt="Fiverr Profile" /></a>
+                <a href="https://www.upwork.com/freelancers/~0180302a9d35e1993e" target="_blank" alt="My Upwork Profile" className="px-2"><img src={upworkIcon} width="34" height="34" className="rounded ml-3" alt="Upwork Profile" /></a>
                 </p>
 
             </div>

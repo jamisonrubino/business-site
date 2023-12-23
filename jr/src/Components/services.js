@@ -32,7 +32,7 @@ export default function Services() {
     console.log("Services");
     return (
         <div>
-            {/* <h1 className="mt-3 mb-4 pb-2">Services</h1> */}
+            <h1 className="mt-3 mb-4 pb-2" style={{display:"none"}}>Services</h1>
             <div className="row mx-4 mt-4 pt-3">
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4 pb-3">
                     <div className="card bg-light text-dark shadow">
