@@ -6,6 +6,9 @@ import thumbtackIcon from "../thumbtack.jpeg";
 import fiverrIcon from "../fiverr.jpg";
 import upworkIcon from "../upwork.jpg";
 import linkedinIcon from "../linkedin.png"
+import yelpIcon from "../yelp.png"
+import angiIcon from "../angi.png"
+
 
 function AlertMessage(props) {
     if (props.submitted === true && props.error === false) {
@@ -110,14 +113,24 @@ export default function Contact() {
                 <p className="p-0 m-1">Phone: +1 541-970-4404</p>
                 <p className="p-0 m-1">Email: jamison.rubino@gmail.com</p>
                 <p className="p-0 m-1">Locale: Seattle, WA</p>
-                <p className="px-0 pt-3 m-1">
-                    <a href="https://www.taskrabbit.com/profile/jamison-r--5" target="_blank" alt="My Taskrabbit Profile" className="px-2"><img src={taskrabbitIcon} width="34" height="34" className="rounded" alt="Taskrabbit Profile" /></a>
-                <a href="https://www.thumbtack.com/wa/renton/movers/jamison-rubino/service/488671145822986247" target="_blank" alt="My Thumbtack Profile" className="px-2"><img src={thumbtackIcon} width="34" height="34" className="rounded ml-3" alt="Thumbtack Profile" style={{opacity: 0.7}} /></a>
-                <a href="https://www.fiverr.com/jamisonrubino" target="_blank" alt="My Fiverr Profile" className="px-2"><img src={fiverrIcon} width="34" height="34" className="rounded ml-3" alt="Fiverr Profile" style={{opacity: 0.7}} /></a>
-                <a href="https://www.upwork.com/freelancers/~0180302a9d35e1993e" target="_blank" alt="My Upwork Profile" className="px-2"><img src={upworkIcon} width="34" height="34" className="rounded ml-3" alt="Upwork Profile" /></a>
-                <a href="https://www.linkedin.com/in/jamison-rubino/" target="_blank" alt="My LinkedIn Profile" className="px-2"><img src={linkedinIcon} width="34" height="34" className="rounded ml-3" alt="LinkedIn Profile" /></a>
+                    <div className="row m-0">
+                        <div className="col pt-3 m-1">
+                            <a href="https://www.taskrabbit.com/profile/jamison-r--5" target="_blank" alt="My Taskrabbit Profile" className="px-2"><img src={taskrabbitIcon} width="34" height="34" className="rounded" alt="Taskrabbit Profile" /></a>
+                            <a href="https://www.thumbtack.com/wa/renton/movers/jamison-rubino/service/488671145822986247" target="_blank" alt="My Thumbtack Profile" className="px-2"><img src={thumbtackIcon} width="34" height="34" className="rounded ml-3" alt="Thumbtack Profile" style={{opacity: 0.4}} /></a>
+                            <a href="https://www.fiverr.com/jamisonrubino" target="_blank" alt="My Fiverr Profile" className="px-2"><img src={fiverrIcon} width="34" height="34" className="rounded ml-3" alt="Fiverr Profile" style={{opacity: 0.4}} /></a>
+                            <a href="https://www.upwork.com/freelancers/~0180302a9d35e1993e" target="_blank" alt="My Upwork Profile" className="px-2"><img src={upworkIcon} width="34" height="34" className="rounded ml-3" alt="Upwork Profile" /></a>
+                        </div>
+                    </div>
+                    <div className="row m-0">
+                        <div className="col pt-3 m-1">
+                            <a href="https://www.linkedin.com/in/jamison-rubino/" target="_blank" alt="My LinkedIn Profile" className="px-2"><img src={linkedinIcon} width="34" height="34" className="rounded ml-3" alt="LinkedIn Profile" /></a>
+                            <a href="https://www.yelp.com/biz/jamison-rubino-seattle" target="_blank" alt="My Yelp Profile" className="px-2"><img src={yelpIcon} width="34" height="34" className="rounded ml-3" alt="Yelp Profile" /></a>
+                            <a href="https://www.angi.com/companylist/us/wa/carnation/jamison-rubino-reviews-10741858.htm" target="_blank" alt="My Angi's List Profile" className="px-2"><img src={angiIcon} width="34" height="34" className="rounded ml-3" alt="Angi's List Profile" /></a>
+                        </div>
+                    </div>
+                    
+                
 
-                </p>
 
             </div>
             
