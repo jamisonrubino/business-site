@@ -34,8 +34,8 @@ export default function Services() {
             }}>Services</h1>
             <div className="row mx-4 mt-4 pt-3">
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4 pb-3">
-                    <div className="card bg-light text-dark border">
-                        <div className="card-body pb-4">
+                    <div className="card bg-light text-dark border shadow-sm">
+                        <div className="card-body p-4">
                             <h4 className="card-title pb-1 mb-0">Moving Help</h4>
                             <h6
                                 className='text-muted mb-3'
@@ -45,14 +45,14 @@ export default function Services() {
                             <p className="card-text">Professional moving help with floor dollies, blankets,
                                 and moving straps to get your belongings from A to B safely.</p>
                         </div>
-                        <ul className="list-group list-group-flush">
+                        <ul className="list-group list-group-flush p-4">
                             <li className="list-group-item bg-light text-dark">
-                                <p className="h4 pt-3">$55/hr</p>
+                                <p className="h4">$55/hr</p>
                                 <p className="h6 pt-0">$45/hr
                                     <font
                                         style={{
                                         fontWeight: 300
-                                    }}>after first hour</font>
+                                    }}>&nbsp;after first hour&nbsp;</font>
                                 </p>
                             </li>
                             <li className="list-group-item bg-light text-dark">
@@ -76,8 +76,8 @@ export default function Services() {
                     </div>
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4 pb-3">
-                    <div className="card bg-light text-dark border">
-                        <div className="card-body pb-4">
+                    <div className="card bg-light text-dark border shadow-sm">
+                        <div className="card-body p-4">
                             <Link
                                 to="/FurnitureAssembly"
                                 style={{
@@ -100,14 +100,14 @@ export default function Services() {
                             <p className="card-text">Professional assembly and disassembly with a
                                 comprehensive tool kit to help you perfect your home or office.</p>
                         </div>
-                        <ul className="list-group list-group-flush">
+                        <ul className="list-group list-group-flush p-4">
                             <li className="list-group-item bg-light text-dark">
-                                <p className="h4 pt-3">$60/hr</p>
+                                <p className="h4">$60/hr</p>
                                 <p className="h6 pt-0">$50/hr
                                     <font
                                         style={{
                                         fontWeight: 300
-                                    }}>after first hour</font>
+                                    }}>&nbsp;after first hour&nbsp;</font>
                                 </p>
                             </li>
                             <li className="list-group-item bg-light text-success">
@@ -130,9 +130,9 @@ export default function Services() {
                 </div>
 
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4 pb-3">
-                    <div className="card bg-dark text-light border">
+                    <div className="card bg-dark text-light border shadow-sm">
                         {/* <img className="card-img-top" src="..." alt="Card image cap" /> */}
-                        <div className="card-body pb-4">
+                        <div className="card-body p-4">
                             <h4 className="card-title pb-1 mb-0">Web Development</h4>
                             <h6
                                 className='text-light mb-3'
@@ -144,12 +144,12 @@ export default function Services() {
                                 website builders or code.</p>
                         </div>
                         <ul
-                            className="list-group list-group-flush"
+                            className="list-group list-group-flush p-4"
                             style={{
                             borderTopColor: "rgba(255,255,255,0.26)"
                         }}>
                             <li className="list-group-item bg-dark text-light">
-                                <p className="h4 pt-3">$52/hr</p>
+                                <p className="h4">$52/hr</p>
                             </li>
                             <li className="list-group-item bg-dark text-light">
                                 <Link
@@ -169,8 +169,8 @@ export default function Services() {
                     </div>
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4 pb-3">
-                    <div className="card bg-dark text-light border">
-                        <div className="card-body pb-4">
+                    <div className="card bg-dark text-light border shadow-sm">
+                        <div className="card-body p-4">
                             {/* onClick={()=>{setSelectedService('Search Engine Optimization'); handleShow() }}*/}
                             <h4 className="card-title pb-1 mb-0">Search Engine Optimization</h4>
                             <h6
@@ -182,12 +182,12 @@ export default function Services() {
                                 basic tips and practices.</p>
                         </div>
                         <ul
-                            className="list-group list-group-flush"
+                            className="list-group list-group-flush p-4"
                             style={{
                             borderTopColor: "rgba(255,255,255,0.26)"
                         }}>
                             <li className="list-group-item bg-dark text-light">
-                                <p className="h4 pt-3">$46/hr</p>
+                                <p className="h4">$46/hr</p>
                             </li>
                             <li className="list-group-item bg-dark text-light">
                                 <Link
@@ -208,7 +208,7 @@ export default function Services() {
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4 pb-3">
                     <div className="card text-dark">
-                        <div className="card-body pb-4">
+                        <div className="card-body p-4">
                             <h4 className="card-title pb-1">Electrical Installation</h4>
                             {/* <p className="card-text">Light fixture and electrical outlet installations. <strong>First 20 bookings discounted 20%</strong>.</p> */}
                             <p className="card-text">Coming soon!</p>
@@ -219,8 +219,8 @@ export default function Services() {
                                 service: "Electrical Installation"
                             }}>Get a Quote</Link>
                         </div>
-                        {/* <ul className="list-group list-group-flush">
-                                <li className="list-group-item bg-light text-success"><p className="h4 pt-3"><s className="text-dark">$52/hr</s> <strong>$42/hr</strong></p><p className="h6 pt-0"><s className="text-dark">$42/hr</s> <strong>$34/hr</strong> <font style={{fontWeight: 300}}>after first hour</font></p></li>
+                        {/* <ul className="list-group list-group-flush p-4">
+                                <li className="list-group-item bg-light text-success"><p className="h4"><s className="text-dark">$52/hr</s> <strong>$42/hr</strong></p><p className="h6 pt-0"><s className="text-dark">$42/hr</s> <strong>$34/hr</strong> <font style={{fontWeight: 300}}>after first hour</font></p></li>
                                 <li className="list-group-item bg-light text-success">
                                 <Link to="../Contact" className="btn btn-secondary disabled"  state={{service: "Electrical Installation"}}>Get a Quote</Link>
                                 </li>
@@ -233,7 +233,7 @@ export default function Services() {
 
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4 pb-3">
                     <div className="card">
-                        <div className="card-body pb-4">
+                        <div className="card-body p-4">
                             <h4 className="card-title pb-1">Plumbing</h4>
                             <p className="card-text">Coming soon!</p>
                             <Link

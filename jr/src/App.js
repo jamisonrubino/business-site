@@ -12,7 +12,7 @@ function App() {
         <Router>
             <div className="App">
                 <header className="App-header">
-                    <NavLink className="App-link text-info" to="/">
+                    <NavLink className="App-link" to="/">
                         {name}
                     </NavLink>
                     <h6 className="text-light">Home and Business Improvement</h6>
@@ -22,7 +22,7 @@ function App() {
                             paddingLeft: 0
                         }}
                             className="mt-0 mb-0">
-                            <li className="px-2">
+                            <li className="px-2" style={{lineHeight: "7px"}}>
                                 <NavLink
                                     to="/"
                                     className={({isActive, isPending}) => isPending

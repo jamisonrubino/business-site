@@ -1,3 +1,4 @@
+// #29344f, #f7fcfe, #76a4d9
 import {useState, useRef, useEffect} from "react"
 import {useLocation} from 'react-router-dom'
 import emailjs from "@emailjs/browser";
@@ -16,7 +17,7 @@ function AlertMessage(props) {
             <div className="row m-0">
                 <div className="col-3 m-0 p-0"></div>
                 <div className="col-6 m-0 p-0">
-                    <div className="alert alert-success mt-3 mx-4 pb-0" role="alert">
+                    <div className="alert alert-info mt-3 mx-4 pb-0" role="alert">
                         <h4 className="alert-heading">Success!</h4>
                         <p>Your message has been sent.</p>
                     </div>
@@ -45,15 +46,15 @@ function SelectedService(props) {
         console.log(props.service)
         return (
             <div className="row m-0">
-                <div className="col-3 m-0 p-0"></div>
-                <div className="col-6 m-0 p-0">
-                    <div className="selected-service alert alert-info mx-4 mt-4 py-0">
+                <div className="col-lg-3 col-sm-0 m-0 p-0"></div>
+                <div className="col-sm-12 col-lg-6 m-0 p-0">
+                    <div className="selected-service alert alert-info mx-3 mt-4 py-0">
                         <p className="py-2 m-0">You have selected the
-                            <strong>{props.service}</strong>
+                            <strong>&nbsp;{props.service}&nbsp;</strong>
                             service.</p>
                     </div>
                 </div>
-                <div className="col-3 m-0 p-0"></div>
+                <div className="col-lg-3 col-sm-0 m-0 p-0"></div>
             </div>
         )
     }
@@ -152,11 +153,13 @@ export default function Contact() {
     return (
         <div className="mx-auto">
             <AlertMessage submitted={contact.submitted} error={contact.error}/>
-            <div className="contact-info my-3">
+            <div className="contact-info my-3 pb-4">
                 <h2>Contact Info</h2>
-                <p className="p-0 m-1">Phone: +1 541-970-4404</p>
-                <p className="p-0 m-1">Email: jamison.rubino@gmail.com</p>
-                <p className="p-0 m-1">Locale: Seattle, WA</p>
+                <div className="pt-4 pb-1">
+                    <p className="p-0 m-1">Phone: +1 541-970-4404</p>
+                    <p className="p-0 m-1">Email: jamison.rubino@gmail.com</p>
+                    <p className="p-0 m-1">Locale: Seattle, WA</p>
+                </div>
                 <div className="row m-0">
                     <div className="col pt-3 m-1">
                         <a
@@ -243,14 +246,19 @@ export default function Contact() {
                 </div>
 
             </div>
+            <div className="row p-0 m-0">
+                <div className="col-sm-12 col-lg-6 mx-auto">
+                    <hr className="hr"></hr>
+                </div>
+            </div>
 
             <SelectedService service={service}/>
 
-            <form onSubmit={e => handleSubmit(e)}>
-                <div className="row mx-0  justify-content-center pb-2 pt-4">
+            <form onSubmit={e => handleSubmit(e)} className="pt-3">
+                <div className="row mx-0 mb-2 justify-content-center pb-2 pt-4">
                     <div className="col-sm-6 col-lg-3">
                         <div className="form-group">
-                            <label htmlFor="firstName" className="form-label">First Name</label>
+                            <label htmlFor="firstName" className="form-label mb-0">First Name</label>
                             <input
                                 value={contact.firstName}
                                 onChange={e => setContact({
@@ -263,7 +271,7 @@ export default function Contact() {
                     </div>
                     <div className="col-sm-6 col-lg-3">
                         <div className="form-group">
-                            <label htmlFor="lastName" className="form-label">Last Name</label>
+                            <label htmlFor="lastName" className="form-label mb-0">Last Name</label>
                             <input
                                 value={contact.lastName}
                                 onChange={e => setContact({
@@ -275,10 +283,10 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                <div className="row mx-0  justify-content-center pb-2">
+                <div className="row mx-0 mb-2 justify-content-center pb-2">
                     <div className="col-sm-6 col-lg-3">
                         <div className="form-group">
-                            <label htmlFor="phone" className="form-label">Phone</label>
+                            <label htmlFor="phone" className="form-label mb-0">Phone</label>
                             <input
                                 value={contact.phone}
                                 onChange={e => setContact({
@@ -291,7 +299,7 @@ export default function Contact() {
                     </div>
                     <div className="col-sm-6 col-lg-3">
                         <div className="form-group">
-                            <label htmlFor="email" className="form-label">Email</label>
+                            <label htmlFor="email" className="form-label mb-0">Email</label>
                             <input
                                 value={contact.email}
                                 onChange={e => setContact({
@@ -304,10 +312,10 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                <div className="row mx-0  justify-content-center pb-2">
+                <div className="row mx-0 mb-2 justify-content-center pb-2">
                     <div className="col-sm-12 col-lg-6">
                         <div className="form-group pb-4">
-                            <label htmlFor="message" className="form-label">Message</label>
+                            <label htmlFor="message" className="form-label mb-0">Message</label>
                             <textarea
                                 value={contact.message}
                                 onChange={e => {

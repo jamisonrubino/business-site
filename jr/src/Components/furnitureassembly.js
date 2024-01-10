@@ -13,11 +13,11 @@ export default function FurnitureAssembly() {
                 <div className="col-8">
                     <p>Below are examples of products I can assemble professionally. See IKEA
                         product pages for labor price estimates. You can also
-                        <Link
+                        &nbsp;<Link
                             to="/Contact"
                             state={{
                             service: "Furniture Assembly"
-                        }}>contact me</Link>
+                        }}>contact me</Link>&nbsp;
                         for my best guess.</p>
                     <p>Though most products I assemble are IKEA brand, I can help with other brands
                         for a similar rate.</p>
@@ -28,7 +28,7 @@ export default function FurnitureAssembly() {
             <div className="row my-4 py-4 mx-0 px-0">
                 <div className="col-1"></div>
                 <div className="col-2 col-md-3 col-sm-4">
-                    <div className="list-group border" id="list-tab" role="tablist">
+                    <div className="list-group border shadow-sm" id="list-tab" role="tablist">
                         <a
                             className="list-group-item list-group-item-action active"
                             id="list-beds-list"
@@ -97,7 +97,7 @@ export default function FurnitureAssembly() {
                             aria-labelledby="list-beds-list">
                             <div
                                 id="carouselExampleIndicators"
-                                className="carousel slide mx-auto border rounded"
+                                className="carousel slide mx-auto border rounded shadow-sm"
                                 style={{
                                 maxWidth: "520px"
                             }}>
