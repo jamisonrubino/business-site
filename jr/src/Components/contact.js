@@ -247,7 +247,7 @@ export default function Contact() {
 
             </div>
             <div className="row p-0 m-0">
-                <div className="col-sm-12 col-lg-6 mx-auto">
+                <div className="col-8 col-md-4 col-sm-6 mx-auto mb-4">
                     <hr className="hr"></hr>
                 </div>
             </div>
