@@ -124,6 +124,11 @@ a {
   background-color: #76a4d9
 }
 
+.alert-warning {
+  color: #f7fcfe;
+  background-color: #D9AB76;
+}
+
 .hr {
   background-color: #29344f;
   border-color: #29344f;
