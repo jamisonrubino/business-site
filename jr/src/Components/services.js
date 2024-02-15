@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import {useState} from 'react'
 import linkIcon from '../link_icon.png';
+import cors from 'cors';
 
 export default function Services() {
     const [show,
@@ -13,6 +14,8 @@ export default function Services() {
     //   let images = {};         r.keys().forEach((item, index) => {
     // images[item.replace('./', '')] = r(item); });         console.log('images',
     // images)     return images }
+    const [rating, setRating] = useState();
+
 
     const handleClose = () => {
         setShow(false);
@@ -23,6 +26,52 @@ export default function Services() {
         // const images = importAll(require.context('../assets/'+selectedService+'/',
         // false, /\.(png|jpe?g)$/)); setServiceImages(images);
     }
+
+    
+    const ratingFetch = async () => {
+        // scrape https://www.taskrabbit.com/profile/jamison-r--5?ref=TRYBX6ON&utm_medium=tryprofile&invitation_source=url&utm_source=trycode and extract an html element and set rating the html element value
+        const response = await fetch('https://www.taskrabbit.com/profile/jamison-r--5', { method: "GET", headers: {
+            "Content-Type": "text/html",
+            "Access-Control-Allow-Origin": '*'
+        }});
+        const data = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(data, "text/html");
+        const ratingElement = doc.querySelector(".sc-dAbbOL.fSiGRF span");
+        setRating(ratingElement.textContent);
+        console.log(ratingElement.textContent);
+        console.log(doc);
+        console.log(data);
+        console.log(response);
+        console.log(rating);
+        
+//     fetch('', { method: "GET", // *GET, POST, PUT, DELETE, etc.
+    //     headers: {
+    //       "Content-Type": "text/html",
+    //       "Access-Control-Allow-Origin": '*'
+    //     } })
+    //         .then(function(response) {
+    //             // When the page is loaded convert it to text
+    //             console.log(response.text());
+
+    //             return response.text()
+    //         })
+    //         .then(function(html) {
+    //             var parser = new DOMParser();
+    //             var doc = parser.parseFromString(html, "text/html");
+    //             console.log(doc);
+    //             rating = doc.querySelector('.sc-dAbbOL.fSiGRF span').innerHTML;
+    //             setRating(rating);
+    //             console.log(doc, rating);
+    //         })
+    //         .catch(function(err) {  
+    //             console.log('Failed to fetch page: ', err);  
+    //         });
+    
+    }
+
+    // // ratingFetch.use(cors());
+    ratingFetch();
 
     console.log("Services");
     return (
@@ -38,10 +87,15 @@ export default function Services() {
                         <div className="card-body p-4">
                             <h4 className="card-title pb-1 mb-0">Moving Help</h4>
                             <h6
-                                className='text-muted mb-3'
+                                className='text-muted mb-0 pb-1'
                                 style={{
                                 fontSize: "14px"
                             }}>LOCAL &bull; SEATTLE, WA</h6>
+                            <h6
+                                className='text-muted mb-3'
+                                style={{
+                                fontSize: "14px"
+                            }}><a href="https://www.taskrabbit.com/profile/jamison-r--5?ref=TRYBX6ON&utm_medium=tryprofile&invitation_source=url&utm_source=trycode" alt="" style={{textDecoration: 'none'}}>4.7 &#9733;&#9733;&#9733;&#9733;&#9733;</a></h6>
                             <p className="card-text">Professional moving help with floor dollies, blankets,
                                 and moving straps to get your belongings from A to B safely.</p>
                         </div>
@@ -64,8 +118,9 @@ export default function Services() {
                                 }}>Get a Quote</Link>
                             </li>
                             <li className="list-group-item bg-light text-success pb-3">
+                            {/* https://jamison-rubino.bookafy.com/category/moving-help-1803b3?locale=en */}
                                 <Link
-                                    to="https://jamison-rubino.bookafy.com/category/moving-help-1803b3?locale=en"
+                                    to="https://book.housecallpro.com/book/Jamison-Rubino/991a7bc836674660a42c3cfabd4c64e6?v2=true"
                                     className="btn btn-dark"
                                     state={{
                                     service: "Moving Help"
@@ -93,10 +148,15 @@ export default function Services() {
         }}/></h4>
                             </Link>
                             <h6
-                                className='text-muted mb-3'
+                                className='text-muted mb-0 pb-1'
                                 style={{
                                 fontSize: "14px"
                             }}>LOCAL &bull; SEATTLE, WA</h6>
+                            <h6
+                                className='text-muted mb-3'
+                                style={{
+                                fontSize: "14px"
+                            }}><a href="https://www.taskrabbit.com/profile/jamison-r--5?ref=TRYBX6ON&utm_medium=tryprofile&invitation_source=url&utm_source=trycode" style={{textDecoration: 'none'}} alt="">{rating}4.9 &#9733;&#9733;&#9733;&#9733;&#9733;</a></h6>
                             <p className="card-text">Professional assembly and disassembly with a
                                 comprehensive tool kit to help you perfect your home or office.</p>
                         </div>
@@ -119,8 +179,9 @@ export default function Services() {
                                 }}>Get a Quote</Link>
                             </li>
                             <li className="list-group-item bg-light text-success pb-3">
+                            {/* https://jamison-rubino.bookafy.com/category/furniture-assembly-8d3332?locale=en */}
                                 <Link
-                                    to="https://jamison-rubino.bookafy.com/category/furniture-assembly-8d3332?locale=en"
+                                    to="https://book.housecallpro.com/book/Jamison-Rubino/991a7bc836674660a42c3cfabd4c64e6?v2=true"
                                     className="btn btn-dark"
                                     target="_blank">Book Now</Link>
                             </li>
@@ -272,6 +333,7 @@ export default function Services() {
                     </p>
                 </div>
             </div>
+            
         </div>
     )
 
