@@ -121,7 +121,9 @@ a {
 
 .alert-info {
   color: #f7fcfe;
-  background-color: #76a4d9
+  background-color: #76a4d9;
+  border: 0px;
+  --bs-alert-border-color: none;
 }
 
 .alert-warning {
