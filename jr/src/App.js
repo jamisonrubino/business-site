@@ -12,9 +12,11 @@ function App() {
         <Router>
             <div className="App">
                 <header className="App-header">
+                    <h1>
                     <NavLink className="App-link" to="/">
                         {name}
                     </NavLink>
+                    </h1>
                     <h6 className="text-light">Home and Business Improvement</h6>
                     <nav>
                         <ul
