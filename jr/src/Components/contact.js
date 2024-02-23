@@ -107,7 +107,7 @@ export default function Contact() {
                 throw new Error("Please fill out all fields before submitting.");
             }
             //from_email, from_name, message
-            const serviceId = "service_s2w7qvx";
+            const serviceId = "service_q3ixfxk";
             const templateId = "template_wzqz139";
             try {
                 setLoading(true);
