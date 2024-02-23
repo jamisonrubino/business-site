@@ -15,27 +15,28 @@ function AlertMessage(props) {
         // return success message
         return (
             <div className="row m-0">
-                <div className="col-3 m-0 p-0"></div>
-                <div className="col-6 m-0 p-0">
-                    <div className="alert alert-info mt-3 mx-4 pb-0" role="alert">
+                <div className="col-lg-3 col-sm-0 m-0 p-0"></div>
+                <div className="col-sm-12 col-lg-6 m-0 p-0 pt-3">
+                    <div className="alert alert-info mx-3 mt-4 pt-3 pb-1 mt-3 mx-4" role="alert">
                         <h4 className="alert-heading">Success!</h4>
                         <p>Your message has been sent.</p>
                     </div>
                 </div>
-                <div className="col-3 m-0 p-0"></div>
+                <div className="col-lg-3 col-sm-0 m-0 p-0"></div>
             </div>
         )
     } else if (props.submitted === false && props.error === true) {
         return (
-            <div className="row m-0">
-                <div className="col-3 m-0 p-0"></div>
-                <div className="col-6 m-0 p-0">
-                    <div className="alert alert-warning mt-3 mx-4 pb-0" role="alert">
+            <div className="row mx-0">
+
+                <div className="col-lg-3 col-sm-0 m-0 p-0"></div>
+                <div className="col-sm-12 col-lg-6 m-0 p-0 pt-3">
+                    <div className="alert alert-warning mx-3 mt-4 pt-3 pb-1 mt-3 mx-4" role="alert">
                         <h4 className="alert-heading">Warning!</h4>
                         <p>Please fill out all fields before submitting.</p>
                     </div>
                 </div>
-                <div className="col-3 m-0 p-0"></div>
+                <div className="col-lg-3 col-sm-0 m-0 p-0"></div>
             </div>
         )
     }
