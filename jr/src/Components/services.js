@@ -6,6 +6,7 @@ import {useState} from 'react'
 import linkIcon from '../link_icon.png';
 import cors from 'cors';
 import inNewTabIcon from '../in_new_tab_icon.svg';
+// import GoogleAds from 'googleads';
 
 export default function Services() {
     const [show,
@@ -76,6 +77,7 @@ export default function Services() {
     console.log("Services");
     return (
         <div>
+            {/* <GoogleAds /> */}
             <div className="row m-0 px-1">
                 <div className="col-12 mx-0 px-2">
                     <div className="selected-service alert alert-info mx-4 mt-4 mb-0 py-0">

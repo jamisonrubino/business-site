@@ -9,6 +9,7 @@ import upworkIcon from "../upwork.jpg";
 import linkedinIcon from "../linkedin.png"
 import yelpIcon from "../yelp.png"
 import angiIcon from "../angi.png"
+// import GoogleAds from 'googleads';
 
 function AlertMessage(props) {
     if (props.submitted === true && props.error === false) {
@@ -153,6 +154,7 @@ export default function Contact() {
 
     return (
         <div className="mx-auto">
+            {/* <GoogleAds /> */}
             <AlertMessage submitted={contact.submitted} error={contact.error}/>
             <div className="contact-info my-3 pb-4">
                 <h2>Contact Info</h2>
